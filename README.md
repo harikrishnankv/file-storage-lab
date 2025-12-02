@@ -27,7 +27,7 @@ Find the admin's flag file by exploiting predictable UUID v1 patterns.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ashiqrehan-21/File-Storage-Lab-UUID-Exploit.git
+   git clone https://github.com/harikrishnankv/file-storage-lab.git
    cd File-Storage-Lab-UUID-Exploit
    ```
 
