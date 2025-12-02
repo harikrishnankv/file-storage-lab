@@ -58,6 +58,7 @@ Find the admin's flag file by exploiting predictable UUID v1 patterns.
 Access at: **http://localhost:5002**
 
 ---
+![App Screenshot](post-login.png)
 
 ## 📚 Challenge Steps
 
