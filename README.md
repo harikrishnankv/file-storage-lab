@@ -33,6 +33,7 @@ Find the admin's flag file by exploiting predictable UUID v1 patterns.
 
 2. **Run the installation script:**
    ```bash
+   chmod +x install.sh
    ./install.sh
    ```
    
@@ -44,6 +45,7 @@ Find the admin's flag file by exploiting predictable UUID v1 patterns.
 
 3. **Start the application:**
    ```bash
+   chmod +x start.sh
    ./start.sh
    ```
    
