@@ -80,12 +80,6 @@ Access at: **http://localhost:5002**
 
 ---
 
-## 🔍 Built-in Tools
-
-The web interface includes a **File Enumeration Tool** (Attack Tools section) that automatically tests adjacent UUIDs to find the flag.
-
----
-
 ## 📖 Technical Details
 
 UUID v1 embeds a timestamp (60 bits), making sequentially generated UUIDs predictable. Files created within seconds have similar UUID values, enabling enumeration attacks.
