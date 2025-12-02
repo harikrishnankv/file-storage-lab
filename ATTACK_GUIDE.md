@@ -22,11 +22,11 @@ When you upload your **first file**, the system automatically creates an admin f
 
 ---
 
-## 🛠️ Steps : Using [UUID Sandwicher](https://github.com/harikrishnankv/UUIDv1_Sandwicher) Tool (Easiest)
+## 🛠️ Steps : Using [UUIDv1 Sandwicher](https://github.com/harikrishnankv/UUIDv1_Sandwicher) Tool (Easiest)
 
 1. Login to your account
 2. Upload 2 files (note the UUID)
-3. Use [UUID Sandwicher](https://github.com/harikrishnankv/UUIDv1_Sandwicher) and enumerate all possible UUIDs.
+3. Use [UUIDv1 Sandwicher](https://github.com/harikrishnankv/UUIDv1_Sandwicher) and enumerate all possible UUIDs.
 4. Use the download function endpoint to bruteforce UUIDs and find the flag that is uploaded by admin
 
 
