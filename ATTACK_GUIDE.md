@@ -9,7 +9,7 @@ Find the admin's flag file by exploiting predictable UUID v1 patterns.
 ## 📋 Quick Start
 
 1. **Register & Login** - Create an account and log in
-2. **Upload a File** - Upload multiple files and note its UUID
+2. **Upload File** - Upload multiple files and note its UUIDs and behaviour in live status
 3. **Find the Flag** - Use the built-in tool or manual enumeration to discover the flag file
 
 ---
