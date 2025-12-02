@@ -22,7 +22,7 @@ When you upload your **first file**, the system automatically creates an admin f
 
 ---
 
-## 🛠️ Method 1: Using [UUID Sandwicher](https://github.com/ashiqrehan-21/UUID-Sandwicher) Tool (Easiest)
+## 🛠️ Steps : Using [UUID Sandwicher](https://github.com/ashiqrehan-21/UUID-Sandwicher) Tool (Easiest)
 
 1. Login to your account
 2. Upload 2 files (note the UUID)
