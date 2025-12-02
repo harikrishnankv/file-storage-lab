@@ -1,0 +1,521 @@
+/* File Storage Lab - Custom Styles */
+
+:root {
+    --primary-color: #007bff;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --dark-color: #343a40;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.5rem;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+}
+
+/* File Cards */
+.file-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.file-card:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.file-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.file-info h6 {
+    margin-bottom: 0.25rem;
+    color: var(--dark-color);
+}
+
+.file-meta {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.file-actions {
+    margin-top: 0.5rem;
+}
+
+.file-actions .btn {
+    margin-right: 0.5rem;
+}
+
+/* Attack Tools */
+.attack-card {
+    transition: all 0.2s ease-in-out;
+}
+
+.attack-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Statistics */
+.stat-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+/* Attack Results */
+.attack-result {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.attack-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.attack-failure {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.attack-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* File Upload */
+.file-upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f8f9fa;
+    transition: all 0.2s ease-in-out;
+}
+
+.file-upload-area:hover {
+    border-color: var(--primary-color);
+    background-color: #e3f2fd;
+}
+
+.file-upload-area.dragover {
+    border-color: var(--primary-color);
+    background-color: #e3f2fd;
+}
+
+/* User Cards */
+.user-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+.user-card.admin {
+    border-color: var(--warning-color);
+    background-color: #fff3cd;
+}
+
+.user-card .user-id {
+    font-family: 'Courier New', monospace;
+    font-size: 0.875rem;
+    color: #6c757d;
+    word-break: break-all;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .file-card {
+        padding: 0.75rem;
+    }
+    
+    .file-icon {
+        font-size: 1.5rem;
+        margin-right: 0.75rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .attack-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* Custom Badges */
+.badge-admin {
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+}
+
+.badge-user {
+    background-color: var(--info-color);
+    color: white;
+}
+
+/* Progress Bars */
+.progress {
+    height: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    border-radius: 0.25rem;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Tables */
+.table {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+}
+
+/* Code Blocks */
+code {
+    background-color: #f8f9fa;
+    color: #e83e8c;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+pre {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+/* Attack Tool Specific Styles */
+.attack-input-group {
+    margin-bottom: 1rem;
+}
+
+.attack-input-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.attack-results {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+}
+
+.attack-progress {
+    margin-bottom: 1rem;
+}
+
+/* UUID Display */
+.uuid-display {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    background-color: #f8f9fa;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #dee2e6;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.uuid-display:hover {
+    white-space: normal;
+    overflow: visible;
+    max-width: none;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.uuid-timestamp {
+    color: var(--info-color);
+    font-weight: 600;
+}
+
+.uuid-mac {
+    color: var(--warning-color);
+    font-weight: 600;
+}
+
+/* File Type Icons */
+.file-type-icon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.file-type-icon.pdf {
+    background-color: #dc3545;
+    color: white;
+}
+
+.file-type-icon.image {
+    background-color: #28a745;
+    color: white;
+}
+
+.file-type-icon.document {
+    background-color: #007bff;
+    color: white;
+}
+
+.file-type-icon.archive {
+    background-color: #6c757d;
+    color: white;
+}
+
+.file-type-icon.text {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.file-type-icon.default {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Activity Feed */
+#activity-feed {
+    min-height: 200px;
+}
+
+.activity-item {
+    background-color: #f8f9fa;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease-in-out;
+    animation: slideInRight 0.3s ease-out;
+}
+
+.activity-item:hover {
+    background-color: #e9ecef;
+    transform: translateX(2px);
+}
+
+.activity-icon {
+    font-size: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f2fd;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animated Sessions Counter */
+.stat-update {
+    animation: numberPulse 0.3s ease-in-out;
+}
+
+@keyframes numberPulse {
+    0% {
+        transform: scale(1);
+        color: inherit;
+    }
+    50% {
+        transform: scale(1.1);
+        color: #28a745;
+    }
+    100% {
+        transform: scale(1);
+        color: inherit;
+    }
+}
+
+/* Sticky Sidebar */
+.sticky-top {
+    position: sticky;
+    z-index: 1020;
+}
